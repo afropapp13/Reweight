@@ -28,8 +28,8 @@
 #include "Framework/Numerical/Spline.h"
 #include "Framework/ParticleData/PDGUtils.h"
 #include "Physics/NuclearState/NuclearUtils.h"
-#include "Physics/HadronTransport/INukeHadroData.h"
-#include "Physics/HadronTransport/INukeHadroFates.h"
+#include "Physics/HadronTransport/INukeHadroData2018.h"
+#include "Physics/HadronTransport/INukeHadroFates2018.h"
 #include "Physics/HadronTransport/INukeUtils.h"
 
 // GENIE/Reweight includes
