@@ -25,7 +25,7 @@
 #include "Framework/Numerical/Spline.h"
 #include "Framework/ParticleData/PDGCodes.h"
 #include "Physics/HadronTransport/INukeHadroData2018.h"
-#include "Physics/HadronTransport/INukeHadroFates.h"
+#include "Physics/HadronTransport/INukeHadroFates2018.h"
 #include "Physics/NuclearState/NuclearUtils.h"
 
 // GENIE/Reweight includes
@@ -420,7 +420,7 @@ double GReWeightINukeParams::Fates::ActualTwkDial(GSyst_t syst, double KE) const
   if(TMath::Abs(sum_fate_fraction_all-1) > 0.01) {
       LOG("ReW", pWARN) << "Unitarity violation level exceeded 1 part in 100.";
       LOG("ReW", pWARN) << "Current sum of all fate fractions = " << sum_fate_fraction_all;
-      exit(1);
+      //exit(1);
   }
 
   map<GSyst_t, double>::const_iterator dial_iter = fSystValuesActual.find(syst);

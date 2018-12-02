@@ -24,7 +24,7 @@
 #include "Framework/ParticleData/PDGUtils.h"
 #include "Framework/ParticleData/PDGCodes.h"
 #include "Physics/HadronTransport/INukeHadroData2018.h"
-#include "Physics/HadronTransport/INukeHadroFates.h"
+#include "Physics/HadronTransport/INukeHadroFates2018.h"
 #include "Physics/HadronTransport/INukeUtils.h"
 
 // GENIE/Reweight includes
@@ -142,7 +142,7 @@ double genie::utils::rew::FateFraction(
   ke = TMath::Max(INukeHadroData2018::fMinKinEnergy,   ke);
   ke = TMath::Min(INukeHadroData2018::fMaxKinEnergyHA, ke);
 
-  int A=12;
+  int A=12;  //temporary
 
   switch (syst) {
 
